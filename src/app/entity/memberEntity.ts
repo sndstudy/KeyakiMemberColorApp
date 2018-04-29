@@ -8,6 +8,10 @@ export class MemberEntity{
 
     private color2: string;
 
+    private color1Name: string;
+
+    private color2Name: string;
+
     public getName():string{
         return this.name;
     }
@@ -30,6 +34,22 @@ export class MemberEntity{
 
     public setColor2(color2:string):void{
         this.color2 = color2;
+    }
+
+    public getColor1Name():string{
+        return this.color1Name;
+    }
+
+    public setColor1Name(color1Name:string):void{
+        this.color1Name = color1Name;
+    }
+
+    public getColor2Name():string{
+        return this.color2Name;
+    }
+
+    public setColor2Name(color2Name:string):void{
+        this.color2Name = color2Name;
     }
 
 }

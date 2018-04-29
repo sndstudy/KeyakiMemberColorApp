@@ -1,3 +1,8 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>メンバーリスト</span>
+  </mat-toolbar-row>
+</mat-toolbar>
 <div>
  <mat-accordion *ngFor="let member of showMemberList">
   <mat-expansion-panel>
@@ -6,11 +11,10 @@
         {{member.name}}
       </mat-panel-title>
       <mat-panel-description>
-        {{member.name}}
       </mat-panel-description>
     </mat-expansion-panel-header>
-
-  <p>{{member.name}}</p>
+  <p><span class="color" [style.background-color]="member.color1"></span><span class="colorName">{{member.color1Name}}</span></p>
+  <p><span class="color" [style.background-color]="member.color2"></span><span class="colorName">{{member.color2Name}}</span></p>
   </mat-expansion-panel>
 </mat-accordion>
 </div>

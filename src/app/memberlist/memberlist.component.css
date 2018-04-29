@@ -1,0 +1,10 @@
+.color{
+    border: solid 1px;
+    display: inline-block;
+    height: 15px;
+    width: 100px;
+}
+
+.colorName{
+    font-size: 15px;
+}
