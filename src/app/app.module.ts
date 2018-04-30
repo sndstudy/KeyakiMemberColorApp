@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { 
   MatExpansionModule,
-  MatToolbarModule 
+  MatToolbarModule,
+  MatRadioModule 
 } from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,6 +22,9 @@ import { MemberlistService } from './service/memberlist.service'
   imports: [
     MatExpansionModule,
     MatToolbarModule,
+    MatRadioModule,
+    FormsModule, 
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     BrowserModule
   ],

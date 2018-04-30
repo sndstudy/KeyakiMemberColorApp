@@ -10,6 +10,7 @@ import { MemberEntity } from '../entity/memberEntity';
 export class MemberlistComponent implements OnInit {
 
   showMemberList:Array<MemberEntity>;
+  selectedButton:string = "all";
 
   constructor(private memberListService:MemberlistService) { }
 
@@ -21,7 +22,13 @@ export class MemberlistComponent implements OnInit {
   
   getMember():void{
 
-    this.showMemberList = this.memberListService.getMemberList();
+    this.showMemberList = this.memberListService.getMemberList("all");
+
+  }
+
+  changeButton():void{
+
+    this.showMemberList = this.memberListService.getMemberList(this.selectedButton);
 
   }
 

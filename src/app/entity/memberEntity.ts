@@ -4,6 +4,8 @@ export class MemberEntity{
 
     private name: string;
 
+    private group: string;
+
     private color1: string;
 
     private color2: string;
@@ -18,6 +20,14 @@ export class MemberEntity{
 
     public setName(name:string):void{
         this.name = name;
+    }
+
+    public getGroup():string{
+        return this.group;
+    }
+
+    public setGroup(group:string):void{
+        this.group = group;
     }
 
     public getColor1():string{

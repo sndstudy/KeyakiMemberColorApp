@@ -3,6 +3,20 @@
     <span>メンバーリスト</span>
   </mat-toolbar-row>
 </mat-toolbar>
+<mat-radio-group class="radio-group" (change)="changeButton()" [(ngModel)]="selectedButton">
+  <mat-radio-button class="radio-button" value="all">
+    メンバー全員
+  </mat-radio-button>
+  <mat-radio-button class="radio-button" value="kanji">
+    欅坂46
+  </mat-radio-button>
+  <mat-radio-button class="radio-button" value="hiragana1">
+    けやき坂46 1期生
+  </mat-radio-button>
+  <mat-radio-button class="radio-button" value="hiragana2">
+    けやき坂46 2期生
+  </mat-radio-button>
+</mat-radio-group>
 <div>
  <mat-accordion *ngFor="let member of showMemberList">
   <mat-expansion-panel>

@@ -8,3 +8,12 @@
 .colorName{
     font-size: 15px;
 }
+
+.radio-group {
+    display: inline-flex;
+    flex-direction: row;
+}
+  
+.radio-button {
+    margin: 5px;
+}
