@@ -11,7 +11,7 @@
 
 .radio-group {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
 }
   
 .radio-button {
